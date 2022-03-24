@@ -20,10 +20,10 @@
 
 ### Content questions
 
-1. ### What is React
+1. ### What is React?
 React is a JavaScript library for building user interfaces
 
-2. ### What are the features of React
+2. ### What are the features of React?
 
 |  Features | Description |
 |--|--|
@@ -78,7 +78,7 @@ var React = require('react')
 import React from 'react'
 ```
 
-6. ### Explain how lists work in React
+6. ### Explain how lists work in React?
 -   We create lists in React as we do in regular JavaScript. Lists display data in an ordered format
 -   The traversal of lists is done using the map() function
 ```javascript
