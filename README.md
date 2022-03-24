@@ -20,10 +20,10 @@
 
 ### Content questions
 
-1. ### What is React?
+1. ### What is React
 React is a JavaScript library for building user interfaces
 
-2. ### What are the features of React?
+2. ### What are the features of React
 
 |  Features | Description |
 |--|--|
@@ -78,7 +78,7 @@ var React = require('react')
 import React from 'react'
 ```
 
-6. ### Explain how lists work in React?
+6. ### Explain how lists work in React
 -   We create lists in React as we do in regular JavaScript. Lists display data in an ordered format
 -   The traversal of lists is done using the map() function
 ```javascript
@@ -158,7 +158,43 @@ React Router is a routing library built on top of React, which is used to create
 -   It maintains consistent structure and behavior and is used to develop single-page web applications.
 -   Enables multiple views in a single application by defining multiple routes in the React application.
 
-19. ### How do you style React components?
+19. ### How to perform automatic redirect after login?
+
+The react-router package will provide the component `<Redirect>` in React Router. Rendering of a `<Redirect>` component will navigate to a newer location. In the history stack, the current location will be overridden by the new location just like the server-side redirects.
+
+21. ### How do you style React components?
 - Inline Styling
 - JavaScript Object
 - CSS Stylesheet
+
+22. ### What is strict mode in React?
+`React.StrictMode` is a useful component for highlighting potential problems in an application. Just like `<Fragment>`, `<StrictMode>` does not render any extra DOM elements. It activates additional checks and warnings for its descendants. These checks apply for _development mode_ only.
+
+23. ### What is prop drilling in React?
+To pass data between such components, we pass props from a source component and keep passing the prop to the next component in the hierarchy till we reach the deeply nested component.
+
+The  **disadvantage**  of using prop drilling is that the components that should otherwise be not aware of the data have access to the data.
+
+22. ### What is React Hooks?
+React Hooks là các hàm tích hợp cho phép các nhà phát triển sử dụng các phương thức trạng thái và vòng đời trong các thành phần React. Đây là những tính năng mới được bổ sung có sẵn trong phiên bản React 16.8. Mỗi vòng đời của một thành phần có 3 giai đoạn bao gồm gắn kết, ngắt kết nối và cập nhật.
+
+23. ### What are the rules that must be followed while using React Hooks?
+There are 2 rules which must be followed while you code with Hooks:
+-   React Hooks must be called only at the top level. It is not allowed to call them inside the nested functions, loops, or conditions.
+-   It is allowed to call the Hooks only from the React Function Components.
+
+24. ### What is the use of useEffect React Hooks?
+- The useEffect React Hook is used for performing the side effects in functional components. 
+- With the help of useEffect, you will inform React that your component requires something to be done after rendering the component or after a state change.
+- The useEffect React Hook will accept 2 arguments: `useEffect(callback[, dependencies]);`
+
+25. ### What are the useCallback & useMemo hooks used for?
+- The  `useCallback`  and  `useMemo`  hooks exist to improve our components' performance.
+- `useCallback` is to prevent functions that are declared within the body of function components from being recreated on every render.
+
+26. ### What is a ref? How do you use it?
+- A ref is a **reference to a DOM element** in React.
+- Refs are often referred to as an "escape hatch" to be able to work with a DOM element directly. They allow us to do certain operations that can't be done through React otherwise, such as clearing or focusing an input.
+
+27. ### In MVC (Model, View, Controller) model, how can you specify the role of the React?
+	  React is the Controller in MVC.
